@@ -1,10 +1,11 @@
+import About from "./pages/About";
 import Projects from "./pages/Projects";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>home</h1>
+             <About></About>
             <Projects></Projects>
         </div>
     );
