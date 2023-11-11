@@ -6,9 +6,22 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
     return (
         <div>
-            <nav className="lg:flex justify-between items-center text-center relative m-10 lg:ml-[500px] ">
+            <nav className="lg:flex justify-between items-center text-center relative m-10 lg:ml-[100px] ">
               
                 <ul className=" flex gap-6 mr-6  ">
+                <li className="mr-[200px] font-bold text-2xl">
+                      
+                      
+
+                      <NavLink
+                       to="/"
+                       className={({ isActive, isPending }) =>
+                       isPending ? "pending" : isActive ? "text-black" : ""
+                         }
+                       >
+                       Sanjida Sultana Mitu
+                     </NavLink>
+                     </li>
                     <li>
                       
                       
@@ -16,7 +29,7 @@ const Navbar = () => {
                         <NavLink
                          to="/"
                          className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                         isPending ? "pending" : isActive ? "text-purple-700 underline" : ""
                           }
                          >
                           Home
@@ -26,7 +39,7 @@ const Navbar = () => {
                        <NavLink
                          to="/about"
                          className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                         isPending ? "pending" : isActive ? "text-purple-700 underline" : ""
                           }
                          >
                           About
@@ -36,7 +49,7 @@ const Navbar = () => {
                        <NavLink
                          to="/research"
                          className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                         isPending ? "pending" : isActive ? "text-purple-700 underline" : ""
                           }
                          >
                           Research
@@ -46,7 +59,7 @@ const Navbar = () => {
                        <NavLink
                          to="/projects"
                          className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                         isPending ? "pending" : isActive ? "text-purple-700 underline" : ""
                           }
                          >
                           Projects
@@ -56,7 +69,7 @@ const Navbar = () => {
                        <NavLink
                          to="/contact"
                          className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                         isPending ? "pending" : isActive ? "text-purple-700 underline" : ""
                           }
                          >
                           Contact
@@ -66,9 +79,9 @@ const Navbar = () => {
                        <NavLink
                          to="/contact"
                          className={({ isActive, isPending }) =>
-                         isPending ? "pending" : isActive ? "text-[#FF444A] underline" : ""
+                         isPending ? "pending" : isActive ? "text-purple-700 underline" : ""
                           }
-                         ><button> Resume </button>
+                         ><button className=""> Resume </button>
                        </NavLink>
                     </li>
                 </ul>
